@@ -1,0 +1,244 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.main{
+width: 1200px;
+height: 620px;
+margin-right:auto; margin-left:auto;	
+position:relative;
+	
+}
+
+
+.intro{
+	position:absolute;
+	height:100%;
+	width:100%;
+}
+.intro img{
+display:block;
+opacity:0;
+	
+}
+
+#togglesoundintro{
+	position: absolute;
+	display:none;
+	left:564px;	
+	top: 400px;
+	background-image:url(images/sound_on.png);
+	width:72px;
+	height:54px;
+	cursor:pointer;
+	z-index:10;
+	
+}
+
+#sup_head{
+margin-top:0px;	
+margin-left:auto; margin-right:auto;	
+	
+}
+
+#main_head{
+	width:0px;
+	height:0px;
+	margin-top:-100px;	
+	margin-left:auto; margin-right:auto;	
+	
+}
+
+#skip{
+top:100px;	
+left:20px;	
+position:absolute;
+cursor:pointer;
+	
+}
+
+#instructions, #keys, #tokens{
+	margin-left:auto; margin-right:auto;
+	display:none;
+}
+
+#instructions{
+	
+	margin-top:80px;
+	
+}
+#keys{
+	margin-top:50px;
+}
+
+#tokens{
+	width:924px;
+	height:335px;
+	margin-top:40px;
+	position:relative;
+	background-image:url(images/tokens.png);
+	background-repeat: no-repeat; 
+	opacity:0;
+}
+
+
+#tokens span{
+	position:absolute;
+	display:block;
+	font-family:"Arial Black", Gadget, sans-serif;
+	font-size:30px;
+	z-index:10;
+	
+}
+
+
+#B{
+	color:#000;
+	top:80px;
+	left:163px;
+	
+	
+}
+
+#W{
+	color:#000;
+	top:80px;
+	left:353px;
+	
+	
+}
+
+#three{
+	color:#000;
+	top:80px;
+	left:569px;
+}
+
+#S{
+	color:#bd0a01;
+	top:225px;
+	left:380px;
+}
+
+#F{
+	
+color:#bd0a01;	
+	top:225px;
+	left:558px;
+}
+
+#ct{
+position:absolute;
+	left:355px;
+	top:270px;
+	z-index:10;
+	cursor:pointer;
+}
+
+#ctg{
+position:absolute;	
+	left:355px;
+	top:270px;
+	z-index:9;
+}
+
+
+
+
+#canvas{
+opacity:1;
+
+border: 5px solid #ffc933;
+background-color:#FFFBF0;
+position:relative;
+cursor:move;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 1-px;
+display:none;
+}
+
+#announce{
+	display:none; 
+	color:#ccab52; 
+	position: absolute; 
+	z-index:20; 
+	font-size:100px; 
+	left:0px;
+	top:155px; 
+	width:1000px;
+	text-align:center; 
+	font-family:'Arial Black', Gadget, sans-serif;
+	text-transform:uppercase; 
+	opacity:0.5;
+	cursor: default;	
+	
+}
+
+.sidebar{
+	position:absolute;
+	background-color:#FFFBF0;
+	height:580px;
+	margin-top:10px;
+	margin-bottom:auto;
+	width:200px;
+	top:0px;
+	right:0px;
+	border-right:5px solid #ffc933;
+	-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 1-px;
+display:none;
+	
+}
+
+.sidebar img, #score, #togglesound{
+	display:block;
+	margin-left:auto; margin-right:auto;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:30px;
+	font-weight:bold;
+	color:#777777;
+	
+}
+
+
+.logo_game{
+	margin-top:60px;
+	
+}
+
+.score{
+	margin-top:55px;
+	
+}
+
+#score{
+	margin-top:0px;
+	
+}
+
+#togglesound{
+	background-image:url(images/sound_on.png);
+	width:72px;
+	height:54px;
+	margin-top:55px;
+	cursor:pointer;
+	
+}
+
+.start_over{
+	margin-top:55px;
+	cursor:pointer;
+	
+	
+}

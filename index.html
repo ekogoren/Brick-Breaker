@@ -1,0 +1,79 @@
+<!doctype html>
+<head>
+<!--[if IE]><script type="text/javascript" src="../excanvas.js"></script><![endif]-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="functions2.js"></script>
+<script src="intro.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Brick Braker</title>
+<style type="text/css">
+</style>
+</head>
+
+<body>
+
+<div class="main">
+    
+    <div class="intro">
+     <audio id="introSound">
+    <source src="audio/intro.mp3" preload="auto">
+    </audio>
+    
+      <div id="togglesoundintro"></div>
+      <img src="images/skip.png" width="135" height="64" id="skip"/>
+      
+    <img src="images/sup_head.png" width="385" height="82" id="sup_head"/>
+    <img src="images/main_head.png" width="643" height="117" id="main_head" />
+    
+    <img src="images/instructions.png" width="237" height="46" id="instructions"/>
+   <img src="images/keys.png" width="757" height="197" id="keys"/>
+   <div id="tokens">
+   <span id="B">B</span>  <span id="W">W</span> <span id="three">3</span> 
+   <span id="S">S</span>  <span id="F">F</span> 
+     
+   </div>
+   <img src="images/cltg.png" width="490" height="102" id="ctg"/>
+    <img src="images/cts.png" width="490" height="102"  id="ct"/>
+
+   
+    </div>
+    
+    
+    
+    <div class="sidebar">
+        <img src="images/logo_game.png" width="175" height="69" class="logo_game" />
+        <img src="images/score.png" width="102" height="44" class="score"/> <p id="score">0</span>
+        <div id="togglesound"></div>
+        <img src="images/start_over.png" width="175" height="69" class="start_over"/>
+    </div>
+    <audio id="sound">
+  	  <source src="audio/start.mp3" preload="auto">
+        <source src="audio/wall.wav" preload="auto">
+        <source src="audio/paddle.wav" preload="auto">
+        <source src="audio/brick.wav" preload="auto">
+        <source src="audio/game_over.wav" preload="auto">
+    </audio>
+    
+    <audio id="tokenSound">
+        <source src="audio/bonus.wav" preload="auto">
+        <source src="audio/bad_token.wav" preload="auto">
+    </audio>
+    <canvas id="canvas" width="990" height="600"></canvas>
+    <p id="announce"></p>
+
+
+
+</div>
+</body>
+
+
+
+<script>
+var context = canvas.getContext("2d");
+$(document).ready(function() {
+   intro(); 
+});
+
+</script>
+</html>
